@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 import { Db, MongoClient } from "mongodb";
 const app = express();
 dotenv.config();
-const PORT = 5000;
+const PORT = process.env.PORT;
 
 app.use(express.json());
 // const users = [
